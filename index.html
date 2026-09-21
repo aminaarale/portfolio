@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amina Arale — Cybersecurity Analyst</title>
+<meta name="description" content="Portfolio of Amina Arale, cybersecurity analyst based in Nairobi. Projects, lab challenge writeups, resume and contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__inner">
+    <a class="mark" href="#home">
+      <span class="mark__initials">AA</span>
+      <span class="mark__name">Amina Arale</span>
+    </a>
+
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav">
+      <span class="navtoggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="navtoggle__label">Menu</span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Section navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Lab challenges</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="topbar__progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ══════════════ HOME / HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="wrap hero__grid">
+
+      <div class="hero__text">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">Amina Arale</h1>
+        <p class="hero__tagline" id="tagline">Cybersecurity analyst — I break things carefully, then write down how to fix them.</p>
+
+        <p class="hero__statement">
+          I'm an information technology graduate training as a security analyst in Nairobi.
+          My work sits between the blue team and the red: I build detection rules and triage
+          alerts, but I also spend my evenings solving capture-the-flag challenges to understand
+          how attacks actually feel from the other side. Every lab I finish gets written up,
+          because a finding nobody can read is a finding nobody can act on.
+        </p>
+
+        <dl class="hero__facts">
+          <div><dt>Based in</dt><dd>Nairobi, Kenya</dd></div>
+          <div><dt>Focus</dt><dd>Security operations &amp; threat detection</dd></div>
+          <div><dt>Currently</dt><dd>Open to internships and junior SOC roles</dd></div>
+        </dl>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#projects">See my projects</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          <button class="btn btn--quiet" id="printcv" type="button">Download CV</button>
+        </div>
+      </div>
+
+      <figure class="hero__photo">
+        <div class="hero__photoframe">
+          <img src="profileA.jpeg" alt="Portrait of Amina Arale" width="440" height="520">
+        </div>
+        <figcaption class="hero__badge">
+          <span class="dot" aria-hidden="true"></span> Available for work
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ RESUME ══════════════ -->
+  <section class="section" id="resume">
+    <div class="wrap section__grid">
+
+      <div class="spine">
+        <h2 class="spine__title">Resume</h2>
+        <p class="spine__note">Academic background, work experience, certifications and the tools I actually use.</p>
+      </div>
+
+      <div class="section__body">
+
+        <h3 class="subhead">Education</h3>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__when">2026 — present</div>
+            <div class="timeline__what">
+              <h4>Cybersecurity Analyst Training Programme</h4>
+              <p class="org">Attach&eacute; Training Institute, Nairobi</p>
+              
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__when">2021 — 2025</div>
+            <div class="timeline__what">
+              <h4>Diploma in Cybersecurity and Forensics</h4>
+              <p class="org">Zetech University</p>
+              
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="subhead">Work experience</h3>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__when">Jan — Apr 2025</div>
+            <div class="timeline__what">
+              <h4>Security Operations Intern</h4>
+              <p class="org">Aurora Systems Ltd, Nairobi</p>
+              <ul class="bullets">
+                <li>Triaged first-line alerts in a Wazuh SIEM and escalated confirmed incidents with a written timeline of events.</li>
+                <li>Tuned noisy detection rules, cutting false positives on the authentication ruleset by roughly a third.</li>
+                <li>Produced weekly threat summaries read by the IT manager and the operations lead.</li>
+              </ul>
+            </div>
+          </li>
+          
+        </ol>
+
+        <h3 class="subhead">Certifications</h3>
+        <ul class="certs">
+          
+          
+          <li class="cert">
+            <h4>Cisco CyberOps Associate</h4>
+            <p class="cert__meta">Certified 2025</p>
+          </li>
+          
+          <li class="cert">
+            <h4>TryHackMe — SOC Level 1 Pathway</h4>
+            <p class="cert__meta">Completed 2025</p>
+          </li>
+          <li class="cert">
+            <h4>Cisco CCNA: Introduction to Networks</h4>
+            <p class="cert__meta">Certified 2023</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Skills</h3>
+        <div class="skills">
+          <div class="skills__group">
+            <h4>Security operations</h4>
+            <ul class="tags">
+              <li>Alert triage</li><li>Log analysis</li><li>Incident documentation</li>
+              <li>MITRE ATT&amp;CK mapping</li><li>Detection tuning</li><li>Threat intelligence basics</li>
+            </ul>
+          </div>
+          
+          <div class="skills__group">
+            <h4>Tools</h4>
+            <ul class="tags tags--mono">
+              <li>Wazuh</li><li>Splunk</li><li>Wireshark</li><li>Burp Suite</li><li>Nmap</li>
+              <li>Zeek</li><li>Sysmon</li><li>CyberChef</li><li>Hashcat</li><li>Autopsy</li>
+              <li>Metasploit</li><li>Packet Tracer</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h4>Systems &amp; networking</h4>
+            <ul class="tags">
+              <li>Linux administration</li><li>Windows Server</li><li>Active Directory</li>
+              <li>TCP/IP</li><li>VLANs and ACLs</li><li>Firewall policy</li><li>Virtualisation</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h4>Programming &amp; scripting</h4>
+            <ul class="tags tags--mono">
+              <li>Python</li><li>Bash</li><li>PowerShell</li><li>SQL</li><li>Regex</li><li>Git</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h4>Professional</h4>
+            <ul class="tags">
+              <li>Technical writing</li><li>Report presentation</li><li>Security awareness training</li>
+              <li>English and Kiswahili</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section class="section section--tint" id="projects">
+    <div class="wrap section__grid">
+
+      <div class="spine">
+        <h2 class="spine__title">Projects</h2>
+        <p class="spine__note">Things I built to answer a question I had. Source code is on GitHub where the work is mine to share.</p>
+      </div>
+
+      <div class="section__body">
+
+        <div class="filters" role="group" aria-label="Filter projects by type">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+      
+        </div>
+
+        <div class="projects" id="projects-grid">
+
+          
+
+         
+
+         
+
+          <article class="project" data-type="networking">
+            <div class="project__head">
+              <h3>Segmented campus network design</h3>
+              <p class="project__context">Final-year university project, 2025</p>
+            </div>
+            <p class="project__summary">
+              My undergraduate project redesigned a flat campus network — where a compromised
+              student laptop could reach the finance servers — into segmented VLANs for students,
+              staff, administration and IoT devices. I modelled the topology in Cisco Packet Tracer,
+              wrote the access control lists enforcing traffic between segments, and tested the
+              policy by attempting lateral movement from the student VLAN.
+            </p>
+            <p class="project__outcome">
+              <strong>Outcome:</strong> a full design document, tested configurations and a written
+              defence of the trade-off between segmentation and administrative overhead. Graded A.
+            </p>
+            <ul class="tags tags--mono">
+              <li>Cisco Packet Tracer</li><li>VLANs</li><li>ACLs</li><li>DHCP</li><li>OSPF</li>
+            </ul>
+            <a class="project__link" href="https://github.com/aminaarale">View the design document</a>
+          </article>
+
+          <article class="project" data-type="offence">
+            <div class="project__head">
+              <h3>Vulnerability assessment of a deliberately broken shop</h3>
+              <p class="project__context">Training project, 2026</p>
+            </div>
+            <p class="project__summary">
+              A full assessment of an OWASP Juice Shop instance, run the way a real engagement would
+              be: scoped, enumerated, exploited, then reported. I chained an injection flaw into an
+              administrative account takeover and documented each step so it could be reproduced by
+              someone who had never seen the application.
+            </p>
+            <p class="project__outcome">
+              <strong>Outcome:</strong> a fourteen-page report with findings rated by CVSS, evidence
+              screenshots and remediation advice written for developers rather than for auditors.
+            </p>
+            <ul class="tags tags--mono">
+              <li>Burp Suite</li><li>OWASP ZAP</li><li>Nmap</li><li>CVSS v3.1</li>
+            </ul>
+            <a class="project__link" href="https://github.com/aminaarale">Read the report</a>
+          </article>
+
+
+        </div>
+        <p class="projects__empty" id="projects-empty" hidden>No projects in that category yet.</p>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- ══════════════ LAB CHALLENGES ══════════════ -->
+  <section class="section" id="labs">
+    <div class="wrap section__grid">
+
+      <div class="spine">
+        <h2 class="spine__title">Lab challenges</h2>
+        <p class="spine__note">Writeups from training labs and CTF rooms. Open one to read the problem, how I worked through it, and what I took away.</p>
+      </div>
+
+      <div class="section__body">
+
+        <div class="labs__toolbar">
+          <p class="labs__count"><span id="lab-count">3</span> writeups</p>
+          <button class="btn btn--quiet" type="button" id="expand-all" aria-expanded="false">Expand all</button>
+        </div>
+
+        <div class="labs" id="labs-list">
+
+          <!-- LAB 1 -->
+          <article class="lab">
+            <h3 class="lab__headwrap">
+              <button class="lab__head" type="button" aria-expanded="false" aria-controls="lab-1">
+                <span class="lab__title">Windows Fundamentals</span>
+                <span class="lab__meta">
+                  <span class="chip chip--blue">Windows</span>
+                  <span class="chip">Fundamentals</span>
+                  <span class="lab__source">Hack The Box</span>
+                </span>
+                <span class="lab__chevron" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="lab__body" id="lab-1" hidden>
+
+              <div class="lab__block">
+                <h4>Problem statement</h4>
+                <p>The objective of this lab was to develop a foundational understanding of the Windows operating system from a cybersecurity perspective. The challenge covered important Windows concepts, including system components, users and groups, file systems, permissions, processes, services, and basic administrative functionality.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Approach</h4>
+                <p>I worked through the lab modules systematically, examining the Windows environment and learning how different components of the operating system function. I practiced navigating the Windows interface and understanding how users, files, processes, services, and permissions are managed. I also connected these concepts to their importance in cybersecurity investigations and system administration.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Tools used</h4>
+                <ul class="tags tags--mono">
+                  <li>Windows operating system</li><li>Windows Command Prompt</li><li>Windows PowerShell</li><li>File Explorer</li><li>Task Manager</li><li>Hack The Box Academy</li>
+                </ul>
+              </div>
+
+              <figure class="shot">
+                <img src="fundamentals.jpeg" alt="Screenshot showing successful completion of Hack The Box Windows Fundamentals modules">
+                <figcaption>Successful completion of the Hack The Box Windows Fundamentals modules.</figcaption>
+              </figure>
+
+              <div class="lab__block lab__block--lesson">
+                <h4>Key lessons learned</h4>
+                <ul class="steps">
+                  <li>Understanding the basic structure and functionality of Windows.</li>
+                  <li>Managing and identifying Windows users and groups.</li>
+                  <li>Understanding files, directories, and permissions.</li>
+                  <li>Identifying running processes and services.</li>
+                  <li>Understanding why Windows fundamentals are important for cybersecurity and system administration.</li>
+                  <li>Becoming more comfortable navigating and investigating a Windows environment.</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- LAB 2 -->
+          <article class="lab">
+            <h3 class="lab__headwrap">
+              <button class="lab__head" type="button" aria-expanded="false" aria-controls="lab-2">
+                <span class="lab__title">Linux Fundamentals</span>
+                <span class="lab__meta">
+                  <span class="chip chip--red">Linux</span>
+                  <span class="chip">Fundamentals</span>
+                  <span class="lab__source">Hack The Box</span>
+                </span>
+                <span class="lab__chevron" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="lab__body" id="lab-2" hidden>
+
+              <div class="lab__block">
+                <h4>Problem statement</h4>
+                <p>The objective of this lab was to build practical foundational knowledge of Linux and become familiar with the command-line environment. The module focused on essential Linux commands, file systems, permissions, users, processes, and system administration concepts.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Approach</h4>
+                <p>I worked through the Linux environment using the command line and practiced common commands for navigating the file system, creating and managing files and directories, viewing system information, and managing permissions. I also explored how Linux users, groups, processes, and services are handled.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Tools used</h4>
+                <ul class="tags tags--mono">
+                  <li>Linux terminal</li><li>Bash shell</li><li>Common Linux utilities and commands</li><li>SSH</li><li>Hack The Box Academy</li>
+                </ul>
+              </div>
+
+              <figure class="shot">
+                <img src="linuxl.jpeg" alt="Screenshot showing successful completion of Hack The Box Linux Fundamentals modules">
+                <figcaption>Successful completion of the Hack The Box Linux Fundamentals modules.</figcaption>
+              </figure>
+
+              <div class="lab__block lab__block--lesson">
+                <h4>Key lessons learned</h4>
+                <ul class="steps">
+                  <li>Navigating Linux using the command line.</li>
+                  <li>Working with files and directories.</li>
+                  <li>Understanding Linux permissions and ownership.</li>
+                  <li>Working with users and groups.</li>
+                  <li>Understanding basic processes and system management.</li>
+                  <li>Using command-line tools to investigate and manage a Linux system.</li>
+                  <li>Developing a foundation for future Linux-based cybersecurity labs.</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- LAB 3 -->
+          <article class="lab">
+            <h3 class="lab__headwrap">
+              <button class="lab__head" type="button" aria-expanded="false" aria-controls="lab-3">
+                <span class="lab__title">Introduction to Web Applications</span>
+                <span class="lab__meta">
+                  <span class="chip chip--blue">Web</span>
+                  <span class="chip">Fundamentals</span>
+                  <span class="lab__source">Hack The Box</span>
+                </span>
+                <span class="lab__chevron" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="lab__body" id="lab-3" hidden>
+
+              <div class="lab__block">
+                <h4>Problem statement</h4>
+                <p>The objective of this lab was to develop a foundational understanding of how web applications work and how security vulnerabilities can occur within them. The module introduced core concepts related to web technologies, requests and responses, application architecture, and common web security issues.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Approach</h4>
+                <p>I studied how users interact with web applications and how information is transferred between a client and a web server. I examined concepts such as HTTP requests and responses, parameters, authentication, sessions, and application functionality. I also learned how security testing can be used to identify weaknesses in web applications within a controlled lab environment.</p>
+              </div>
+
+              <div class="lab__block">
+                <h4>Tools used</h4>
+                <ul class="tags tags--mono">
+                  <li>Web browser</li><li>Browser Developer Tools</li><li>Burp Suite</li><li>HTTP/HTTPS concepts</li><li>Hack The Box Academy</li>
+                </ul>
+              </div>
+
+              <figure class="shot">
+                <img src="ebapp.jpeg" alt="Screenshot showing successful completion of Hack The Box Introduction to Web Applications module">
+                <figcaption>Successful completion of the Hack The Box Introduction to Web Applications module.</figcaption>
+              </figure>
+
+              <div class="lab__block lab__block--lesson">
+                <h4>Key lessons learned</h4>
+                <ul class="steps">
+                  <li>Understanding the basic architecture of web applications.</li>
+                  <li>Understanding HTTP requests and responses.</li>
+                  <li>Learning how browsers communicate with web servers.</li>
+                  <li>Understanding parameters, cookies, sessions, and authentication.</li>
+                  <li>Becoming familiar with Burp Suite for inspecting web traffic.</li>
+                  <li>Developing an understanding of common web application security risks.</li>
+                  <li>Learning the importance of secure application design and proper input handling.</li>
+                </ul>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section section--dark" id="contact">
+    <div class="wrap section__grid">
+
+      <div class="spine spine--dark">
+        <h2 class="spine__title">Contact</h2>
+        <p class="spine__note">The fastest way to reach me is email. I answer within a day or two.</p>
+      </div>
+
+      <div class="section__body">
+        <div class="contact">
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Email</span>
+              <a class="contact__value" href="mailto:amina.arale@example.com">aminaarale6@gmail.com</a>
+              <button class="copy" type="button" data-copy="amina.arale@example.com">Copy</button>
+            </li>
+            <li>
+              <span class="contact__label">Phone</span>
+              <a class="contact__value" href="tel:+254700000000">+254 700 472 036</a>
+              <button class="copy" type="button" data-copy="+254700000000">Copy</button>
+            </li>
+            <li>
+              <span class="contact__label">LinkedIn</span>
+              <a class="contact__value" href="https://www.linkedin.com/in/aminaarale">linkedin.com/in/aminaarale</a>
+            </li>
+            <li>
+              <span class="contact__label">GitHub</span>
+              <a class="contact__value" href="https://github.com/aminaarale">github.com/aminaarale</a>
+            </li>
+            <li>
+              <span class="contact__label">TryHackMe</span>
+              <a class="contact__value" href="https://tryhackme.com/p/araleamina6">tryhackme.com/p/araleamina6</a>
+            </li>
+            <li>
+              <span class="contact__label">Location</span>
+              <span class="contact__value">Nairobi, Kenya</span>
+            </li>
+          </ul>
+
+          <form class="contact__form" id="contact-form" novalidate>
+            <p class="contact__formintro">Or send a message and it will open in your mail client.</p>
+
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name">
+              <p class="field__error" data-error-for="cf-name" hidden>Enter your name so I know who I'm replying to.</p>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email">
+              <p class="field__error" data-error-for="cf-email" hidden>Enter a valid email address.</p>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+              <p class="field__error" data-error-for="cf-message" hidden>Add a short message.</p>
+            </div>
+
+            <button class="btn btn--solid" type="submit">Send message</button>
+            <p class="contact__status" id="contact-status" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>Amina Arale — Nairobi, Kenya</p>
+    <p>Built by hand with HTML, CSS and JavaScript.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
